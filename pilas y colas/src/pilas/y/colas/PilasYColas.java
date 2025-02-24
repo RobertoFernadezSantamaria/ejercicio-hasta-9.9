@@ -10,11 +10,23 @@ package pilas.y.colas;
  */
 public class PilasYColas {
 
-    /**
-     * @param args the command line arguments
-     */
     public static void main(String[] args) {
-        // TODO code application logic here
+        Lista p1 = new Lista();
+       
+        Lista p2 = new Lista();
+        p1.insertarInicio(5);
+        p1.insercionFinal(4);
+        p1.insertarInicio(6);
+        p1.Mostrar();
+        p1.insertar(1, 7);
+        p1.Mostrar();
+        p1.eliminar(0);
+        p1.Mostrar();
+        p1.get(5);
+        p1.get(2);
+        System.out.println( p1.buscar(5));
+        System.out.println(p1.cantidad());
+        
     }
-    
+
 }
